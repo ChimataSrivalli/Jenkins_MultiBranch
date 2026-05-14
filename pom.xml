@@ -12,6 +12,7 @@
   <url>http://www.example.com</url>
 
   <properties>
+    <maven.compiler.release>8</maven.compiler.release>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
@@ -38,6 +39,14 @@
           <target>1.6</target>
         </configuration>
       </plugin>
+     <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.11.0</version>
+  <configuration>
+    <release>8</release>
+  </configuration>
+</plugin>
 
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
